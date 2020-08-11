@@ -1,5 +1,7 @@
 'use strict';
 
+// Pair Programming with Amelia Waggoner
+
 /* ------------------------------------------------------------------------------------------------
 
 CHALLENGE 1 - Review
@@ -18,6 +20,7 @@ const raisedToTheThird = (arr) => {
   })
   return newArr;
 }
+// Referenced Material: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -47,7 +50,8 @@ console.log(a) prints [1, 2, 3, 1]
 
 const appendFirstToLast = (arr) => {
   // Solution code here...
-  appendFirstToLast(arr);
+  let value = arr[0];
+  arr.push(value);
   console.log(arr);
 };
 
@@ -68,6 +72,7 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 
 const addBirthYearProperty = (obj, year) => {
   // Solution code here...
+  obj.yearBorn = year;
 };
 
 /* ------------------------------------------------------------------------------------------------
