@@ -41,10 +41,13 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  // Solution code here...
-
+  let numberTest = /\d/;
+  if (numberTest.test(input)){
+    return true;
+  } else {
+    return false;
+  }
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -53,11 +56,20 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
+// const isCapitalized = (str) => {
+//   // Solution code here...
+//   const capitalLetter = /[A-Z]\w+/g
+// };
+// RegExp.test(capitalLetter);
+
 const isCapitalized = (str) => {
-  // Solution code here...
-  const capitalLetter = /[A-Z]\w+/g
-};
-RegExp.test(capitalLetter);
+  const capitalLetterMatch = /[A-Z]\w+/g
+ }
+isCapitalized.match(capitalLetterMatch);
+
+ 
+ 
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -66,6 +78,8 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
+  const newArr = /[A-J]\w+/g;
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
