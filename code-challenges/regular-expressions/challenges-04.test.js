@@ -57,7 +57,7 @@ const isCapitalized = (str) => {
   // Solution code here...
   const capitalLetter = /[A-Z]\w+/g
 };
-
+RegExp.test(capitalLetter);
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
