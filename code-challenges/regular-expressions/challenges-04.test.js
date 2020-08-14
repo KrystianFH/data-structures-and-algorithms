@@ -42,12 +42,9 @@ For example:
 
 const isNum = (input) => {
   let numberTest = /\d/;
-  if (numberTest.test(input)){
-    return true;
-  } else {
-    return false;
-  }
-};
+  //(numberTest.test(input));
+  return numberTest.test(input);
+} 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -56,17 +53,11 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
-// const isCapitalized = (str) => {
-//   // Solution code here...
-//   const capitalLetter = /[A-Z]\w+/g
-// };
-// RegExp.test(capitalLetter);
-
 const isCapitalized = (str) => {
-  const capitalLetterMatch = /[A-Z]\w+/g
+// Solution code here...
+  const capitalLetterMatch = /[A-Z]\w+/g;
+  return str.match(capitalLetterMatch) || [];
  }
-isCapitalized.match(capitalLetterMatch);
-
  
  
 
@@ -77,10 +68,15 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
-  const newArr = /[A-J]\w+/g;
-  return newArr;
-};
+  const newArray = /^[A-J]\w+/;
+  const result =[];
+  arr.forEach(city => {
+    if(newArray.test(city)) {
+      result.push(city);
+    }
+  })
+  return result;
+ };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
