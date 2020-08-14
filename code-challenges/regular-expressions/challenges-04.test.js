@@ -57,7 +57,7 @@ const isCapitalized = (str) => {
 // Solution code here...
   const capitalLetterMatch = /[A-Z]\w+/g;
   return str.match(capitalLetterMatch) || [];
- }
+ } 
  
  
 
