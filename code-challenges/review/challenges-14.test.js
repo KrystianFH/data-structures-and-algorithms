@@ -120,17 +120,10 @@ let starWarsData = [{
   gender: 'n/a'
 }];
 
-let biggerThanLuke = (arr) => {
+let biggerThanLuke = (arr) => 
   // Solution code here...
-  
-  let heavy = arr.reduce(heavy =>{
-    if (starWarsData.mass >= '77'){
-      return starWarsData.name;
-    }
-  return newArr.push(`${heavy} - `);
+  arr.filter(bigStars => parseInt(bigStars.mass) > 78).map(starsMass => starsMass.name).join().replace(',', ' - '); 
 
-  })
-};    
 
 
 
@@ -150,7 +143,26 @@ This data could be sorted by name or price.
 
 const sortBy = (property, arr) => {
   // Solution code here...
-};
+  arr.sort ( (a, b) => {
+    if (property === name){
+      if (a.name > b.name){
+        return 1;
+      } else if (a.name < b.name){
+        return -1;
+      } else {
+        return 0;
+      } 
+    } else if (property === price){
+        if(a.price > b.price){
+          return 1;
+        } else if (a.price < b.price){
+          return -1;
+        } else {
+          return 0;
+        } 
+    }
+  return arr;
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
@@ -251,7 +263,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should sort items by a price', () => {
 
     expect(sortBy('price', [
