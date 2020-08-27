@@ -1,5 +1,7 @@
 'use strict';
 
+const e = require('express');
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
@@ -143,26 +145,35 @@ This data could be sorted by name or price.
 
 const sortBy = (property, arr) => {
   // Solution code here...
-  arr.sort ( (a, b) => {
-    if (property === name){
-      if (a.name > b.name){
-        return 1;
-      } else if (a.name < b.name){
-        return -1;
-      } else {
-        return 0;
-      } 
-    } else if (property === price){
-        if(a.price > b.price){
-          return 1;
-        } else if (a.price < b.price){
-          return -1;
-        } else {
-          return 0;
-        } 
-    }
-  return arr;
-});
+  if(property === 'price'){
+    return arr.sort(comparePrice);
+  } else {
+    return arr.sort(compareName);
+  }
+};
+
+function comparePrice(a, b){
+  if(a.price > b.price){
+    return 1;
+  } else if (b.price > a.price){
+    return -1;
+  } else {
+    return 0;
+  }
+}
+
+function compareName(a, b){
+  if(a.name > b.name){
+    return 1;
+  } else if (b.name > a.name){
+    return -1;
+  } else {
+    return 0;
+  }
+}
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
