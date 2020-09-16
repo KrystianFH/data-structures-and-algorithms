@@ -3,8 +3,8 @@
 ## Table of Contents
 
 1. [__Class One:__ *Array Reverse*](ArrayReverse.java)
-1. [__Class Two:__ *Array Shift*](ArrayShift.java)
-1. [__Class Three:__ **]()
+1. [__Class Two:__ *Array Shift*](src/main/java/challenges/ArrayShift.java)
+1. [__Class Three:__ *Binary Search*](src/main/java/challenges/BinarySearch.java)
 1. [__Class Four:__ **]()
 1. [__Class Five:__ **]()
 1. [__Class Six:__ **]()
@@ -43,16 +43,4 @@ My approach was to Google references to use for reversing an array in Java.
 ## Solution
 There was not a whiteboard assignment for this lab. 
 
-### Class 02 - Array Shift
 
-# Insert and Shift an Array
-Insert and shift array in middle at index
-
-## Challenge
-Write a function called insertShiftArray which takes an array as an argument and the value to be added, return an array with the new value added at the middle index.
-
-## Approach & Efficiency
-My approach was to Google references to use for inserting a value into a sorted array. 
-
-## Solution
-![Insert and Shift an Array Whiteboard](src/main/resources/whiteboard#1.PNG)
