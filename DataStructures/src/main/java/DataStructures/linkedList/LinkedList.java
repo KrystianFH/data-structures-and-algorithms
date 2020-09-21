@@ -15,21 +15,22 @@ public class LinkedList {
         }
     }
 
+
     public Node head = null;
     public Node tail = null;
 
-    public void insert(int data){
+    public void insert(int newData){ //head first insertion
 
-        Node newNode= new Node(data);
+        Node newNode= new Node(newData);
 
-        if (head == null){
+        if (this.head == null){
 
-            head = newNode;
-            tail = newNode;
+            this.head = newNode;
+            this.tail = this.head;
 
         } else {
-            head.next = newNode;
-            head = newNode;
+            newNode.next = this.head;
+            this.head = newNode;
         }
 
     }
@@ -41,6 +42,22 @@ public class LinkedList {
 //
 //    }
 
+    public void insertBefore(int value, int newValue){
+        if (this.head.value == value){
+            insert(newValue);
+        } else {
+            Node current = this.head.next;
+            Node previous = this.head;
+
+            while(current.value != value){
+                current = current.next;
+                previous = previous.next;
+            }
+            Node newNode = new Node(newValue);
+            newNode.next = current;
+            previous.next = newNode;
+        }
+    }
 
 
 
