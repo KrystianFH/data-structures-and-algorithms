@@ -3,8 +3,7 @@ package DataStructures.linkedList;
 import DataStructures.Library;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class LinkedListTest {
 
@@ -22,6 +21,6 @@ public class LinkedListTest {
         test.addToFront(9);
 
         test.nthFromEnd(6);
-        assertEquals("k is greater than the length of ll", "Null", test.toString());
+        assertThrows("n is out of bounds", Exception.class, () -> test.nthFromEnd(100));
     }
 }
