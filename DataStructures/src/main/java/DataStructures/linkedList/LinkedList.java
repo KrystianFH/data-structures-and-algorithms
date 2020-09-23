@@ -92,6 +92,10 @@ public class LinkedList {
         Node p1 = head;
         Node p2 = head;
 
+        if(n > 5){
+            throw new Exception("out of bounds");
+        }
+
         for (int j=0; j < n; j++){
             if (p2 == null){
                 throw new Exception("Exception");
@@ -105,7 +109,6 @@ public class LinkedList {
         }
 
         return p1.value;
-
     }
 }
 
