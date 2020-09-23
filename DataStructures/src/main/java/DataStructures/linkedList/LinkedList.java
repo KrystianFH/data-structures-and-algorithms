@@ -59,10 +59,26 @@ public class LinkedList {
         newList.addToFront(15);
         newList.addToFront(21);
 
+        LinkedList secondList = new LinkedList();
+        LinkedList firstList = new LinkedList();
+
+        firstList.addToFront(2);
+        firstList.addToFront(4);
+        firstList.addToFront(6);
+        firstList.addToFront(8);
+
+        secondList.addToFront(3);
+        secondList.addToFront(6);
+        secondList.addToFront(9);
+        secondList.addToFront(12);
+        secondList.addToFront(15);
 
 
         newList.nthFromEnd(2);
         System.out.println(newList.nthFromEnd(2));
+
+        System.out.println(firstList);
+        System.out.println(secondList);
     }
 
 
@@ -110,6 +126,32 @@ public class LinkedList {
 
         return p1.value;
     }
+
+    public static LinkedList ziplists(LinkedList one , LinkedList two){
+        LinkedList mergedList = new LinkedList();
+        if (one == null){
+            return two;
+        } else if (two == null){
+            return one;
+        }
+        Node current1 = one.head;
+        Node current2 = two.head;
+        Node tempVar = current1;
+        Node tempVar2 = current2;
+
+        while (current1 != null) {
+            current1 = current2;
+            current2 = current1.next;
+            current1.next = current2.next;
+        }
+        return result;
+//        LinkedList mergedList = new LinkedList();
+    }
+
+
+
+
+
 }
 
 
