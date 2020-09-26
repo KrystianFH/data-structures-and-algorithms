@@ -35,12 +35,18 @@ public class LinkedList {
 
     }
 
-//    public boolean includes (int data) {
-//
-//        Node newNode = new Node(data);
-//
-//
-//    }
+
+    public boolean includes (int data) {
+        Node node = head;
+        boolean includes = false;
+        while(node.next != null) {
+            if (node.value == data) {
+                includes = true;
+                node = node.next;
+            }
+        }
+    return includes;
+    }
 
 
     public String toString(Node current) {
@@ -83,7 +89,7 @@ public class LinkedList {
 
 
 
-    public void insertBefore(int value, int newValue){
+//    public void insertBefore(int value, int newValue){
 //        if (this.head.value == value){
 //            insert(newValue);
 //        } else {
@@ -127,26 +133,26 @@ public class LinkedList {
         return p1.value;
     }
 
-//    public static LinkedList ziplists(LinkedList one , LinkedList two){
-//        LinkedList mergedList = new LinkedList();
-//        if (one == null){
-//            return two;
-//        } else if (two == null){
-//            return one;
-//        }
-//        Node current1 = one.head;
-//        Node current2 = two.head;
-//        Node tempVar = current1;
-//        Node tempVar2 = current2;
-//
-//        while (current1 != null) {
-//            current1 = current2;
-//            current2 = current1.next;
-//            current1.next = current2.next;
-//        }
-////        return result;
-////        LinkedList mergedList = new LinkedList();
-//    }
+    public static LinkedList ziplists(LinkedList one , LinkedList two){
+        LinkedList mergedList = new LinkedList();
+        if (one == null){
+            return two;
+        } else if (two == null){
+            return one;
+        }
+        Node current1 = one.head;
+        Node current2 = two.head;
+        Node tempVar = current1;
+        Node tempVar2 = current2;
+
+        while (current1 != null) {
+            current1 = current2;
+            current2 = current1.next;
+            current1.next = current2.next;
+        }
+        return result;
+        LinkedList mergedList = new LinkedList();
+    }
 
 
 
