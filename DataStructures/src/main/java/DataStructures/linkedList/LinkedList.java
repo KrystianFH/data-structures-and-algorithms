@@ -104,7 +104,7 @@ public class LinkedList {
 //            newNode.next = current;
 //            previous.next = newNode;
 //        }
-    }
+//    }
     // kth from end
     // write a method for the ll class which takes a number, k as a parameter
     // return nodes value that is k from the end of the ll
@@ -150,8 +150,8 @@ public class LinkedList {
             current2 = current1.next;
             current1.next = current2.next;
         }
-        return result;
-        LinkedList mergedList = new LinkedList();
+        return mergedList;
+//        LinkedList mergedList = new LinkedList();
     }
 
 
