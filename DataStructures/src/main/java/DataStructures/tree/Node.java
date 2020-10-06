@@ -10,4 +10,9 @@ public class Node {
         right = null;
         left = null;
     }
+
+    @Override
+    public String toString() {
+        return "Node{" + "value=" + value + '}';
+    }
 }
