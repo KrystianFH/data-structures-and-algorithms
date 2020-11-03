@@ -26,6 +26,9 @@
 1. [__Class Twenty Two:__ **]()
 1. [__Class Twenty Three:__ **]()
 1. [__Class Twenty Four:__ **]()
+1. [__Class Twenty Six:__ *Insertion Sort*](Blog.md)
+1. [__Class Thirty Six:__ *Breadth First Search of Graph*](Blog2.md)
+
 
 ## Class Notes
 
