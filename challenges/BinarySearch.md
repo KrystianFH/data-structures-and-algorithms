@@ -14,4 +14,4 @@ midpoint of the right half of the array. Repeat until search key is found, going
 If search key is found, return the index of the element. If search key is not found, return -1. 
 
 ## Solution
-![Binary Search Whiteboard](../../resources/whiteboardCodeChallenge03.jpg)
+![Binary Search Whiteboard](src/main/resources/WhiteboardCodeChallenge03.jpg)

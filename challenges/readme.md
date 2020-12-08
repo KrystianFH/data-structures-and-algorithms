@@ -48,3 +48,8 @@
 ### **Class 02 - Insert and Shift Array**
 
 - [Follow me to the notes for class 2!](arrayShift.md)
+
+### **Class 03 - Binary Search of Array**
+
+- [Follow me to the notes for class 3!](BinarySearch.md)
+

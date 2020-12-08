@@ -20,11 +20,9 @@ public class BinarySearch {
             else if (arr[mid] == searchKey){
                 index = mid;
                 break;
+            } else {
+                index = -1;
             }
-
-//            else {
-//                index = -1;
-//            }
         }
         return index;
     }
