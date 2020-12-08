@@ -32,18 +32,19 @@
 
 ## Class Notes
 
-### Class 01 - Array Reverse
+### **Class 01 - Array Reverse**
 
-# Reverse an Array
-Reverse an Array.
+#### Reverse an Array
 
-## Challenge
-Write a function called reverseArray which takes an array as an argument.
+#### Challenge
+- Write a function called reverseArray which takes an array as an argument.
 
-## Approach & Efficiency
-My approach was to Google references to use for reversing an array in Java. 
+#### Approach & Efficiency
+- My approach was to Google references to use for reversing an array in Java. 
 
-## Solution
-There was not a whiteboard assignment for this lab. 
+#### Solution
+- There was not a whiteboard assignment for this lab. 
 
+### **Class 02 - Insert and Shift Array**
 
+- [Follow me to the notes for class 2!](arrayShift.md)
