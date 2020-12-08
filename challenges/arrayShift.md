@@ -10,4 +10,4 @@ Write a function called insertShiftArray which takes an array as an argument and
 My approach was to Google references to use for inserting a value into a sorted array. 
 
 ## Solution
-![Insert and Shift an Array Whiteboard](../../resources/whiteboardCodeChallenge2.jpg)
+![Insert and Shift an Array Whiteboard](src/main/resources/whiteboardCodeChallenge2.jpg)
