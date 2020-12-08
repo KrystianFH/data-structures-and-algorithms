@@ -17,6 +17,5 @@ public class BinarySearchTest {
 
         assertEquals("Success, you've found the key!", test.binarySearch(testArr1, searchKey1), 3);
         assertEquals("No key for you mate", test.binarySearch(testArr2, searchKey2), -1);
-
     }
 }
