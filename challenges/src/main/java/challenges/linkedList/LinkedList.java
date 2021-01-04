@@ -74,24 +74,58 @@ public class LinkedList {
         System.out.println(secondList);
     }
 
+    public void append(int newValue){
+
+        Node newNode = new Node (newValue);
+
+        if(this.head == null){
+            this.head = newNode;
+            this.current = this.head;
+        } else {
+            this.current.next = newNode;
+        }
+    }
+
+    public void insertBefore(int value, int newValue){
+        Node newNode = new Node(newValue);
+
+        Node pointer = head;
+
+        for(int i=1; ;i++){
+            if(pointer == null){
+                break;
+            }
+
+            if(i+1 == value){
+                newNode.next = pointer.next;
+                pointer.next = newNode;
+                break;
+            }
+            pointer = pointer.next;
+        }
+    }
 
 
-//    public void insertBefore(int value, int newValue){
-//        if (this.head.value == value){
-//            insert(newValue);
-//        } else {
-//            Node current = this.head.next;
-//            Node previous = this.head;
-//
-//            while(current.value != value){
-//                current = current.next;
-//                previous = previous.next;
-//            }
-//            Node newNode = new Node(newValue);
-//            newNode.next = current;
-//            previous.next = newNode;
-//        }
-//    }
+    public void insertAfter(int value, int newValue){
+
+        Node newNode = new Node(newValue);
+
+        Node pointer = head;
+
+        for(int i=1; ;i++){
+            if(pointer == null){
+                break;
+            }
+
+            if(i == value){
+                newNode.next = pointer.next;
+                pointer.next = newNode;
+                break;
+            }
+            pointer = pointer.next;
+        }
+    }
+
     // kth from end
     // write a method for the ll class which takes a number, k as a parameter
     // return nodes value that is k from the end of the ll
