@@ -91,6 +91,50 @@ public class LinkedListTest {
 
         assertEquals("{5} -> {4} -> {3} -> {2} -> {1} -> null", testList.toString());
     }
+
+    @Test public void addToEnd(){
+        LinkedList testList = new LinkedList();
+
+        testList.addToFront(1);
+        testList.addToFront(2);
+        testList.addToFront(3);
+        testList.addToFront(4);
+        testList.addToFront(5);
+        testList.append(6);
+
+        assertEquals("{5} -> {4} -> {3} -> {2} -> {1} -> {6} -> null", testList.toString());
+
+    }
+
+    @Test public void insertAfterValue(){
+        LinkedList testList = new LinkedList();
+
+        testList.addToFront(1);
+        testList.addToFront(2);
+        testList.addToFront(3);
+        testList.addToFront(4);
+        testList.addToFront(5);
+
+        testList.insertAfter(3, 7);
+
+        assertEquals("{5} -> {4} -> {3} -> {7} -> {2} -> {1} -> null", testList.toString());
+
+    }
+
+    @Test public void insertBeforeValue(){
+        LinkedList testList = new LinkedList();
+
+        testList.addToFront(1);
+        testList.addToFront(2);
+        testList.addToFront(3);
+        testList.addToFront(4);
+        testList.addToFront(5);
+
+        testList.insertBefore(3, 7);
+
+        assertEquals("{5} -> {4} -> {7} -> {3} -> {2} -> {1} -> null", testList.toString());
+
+    }
 //
 //    @Test public void testNthFromEnd() throws Exception {
 //        LinkedList test = new LinkedList();

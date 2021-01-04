@@ -6,7 +6,7 @@
 1. [__Class Two:__ *Array Shift*](src/main/java/challenges/ArrayShift.java)
 1. [__Class Three:__ *Binary Search*](src/main/java/challenges/BinarySearch.java)
 1. [__Class Five:__ *Linked Lists*](src/main/java/challenges/linkedList/LinkedList.java)
-1. [__Class Six:__ **]()
+1. [__Class Six:__ *Linked List Insertions*](src/main/java/challenges/linkedList/LinkedList.java)
 1. [__Class Seven:__ **]()
 1. [__Class Eight:__ **]()
 1. [__Class Nine:__ **]()
@@ -52,3 +52,10 @@
 
 - [Follow me to the notes for class 3!](BinarySearch.md)
 
+### **Class 05 - Linked Lists**
+
+- [Follow me to the notes for class 5!](LinkedList.md)
+
+### **Class 06 - Linked List Insertions**
+
+- [Follow me to the notes for class 6!](LinkedListInsertions.md)
