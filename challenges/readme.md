@@ -10,7 +10,7 @@
 1. [__Class Seven:__ *N-th Value from End of a Linked List*](src/main/java/challenges/linkedList/LinkedList.java)
 1. [__Class Eight:__ *Zip Two Linked Lists*](src/main/java/challenges/linkedList/LinkedList.java)
 1. [__Class Ten:__ *Stack and Queue Implementation*](src/main/java/challenges/stacksandqueues)
-1. [__Class Eleven:__ **]()
+1. [__Class Eleven:__ *Queue with Two Stacks*](src/main/java/challenges/stacksandqueues/PseudoQueue.java)
 1. [__Class Twelve:__ **]()
 1. [__Class Thirteen:__ **]()
 1. [__Class Fourteen:__ **]()
@@ -70,6 +70,11 @@
 ### **Class 10 - Stack and Queue Implementation**
 
 - [Follow me to the notes for class 10!](StacksAndQueues.md)
+
+### **Class 11 - Queue with Two Stacks**
+
+- [Follow me to the notes for class 11!](QueueWithTwoStacks.md)
+
 
 
 
