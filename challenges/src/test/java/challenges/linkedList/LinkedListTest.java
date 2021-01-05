@@ -136,17 +136,25 @@ public class LinkedListTest {
 
     }
 //
-//    @Test public void testNthFromEnd() throws Exception {
-//        LinkedList test = new LinkedList();
-//        test.addToFront(2);
-//        test.addToFront(3);
-//        test.addToFront(5);
-//        test.addToFront(8);
-//        test.addToFront(9);
-//
-//        test.nthFromEnd(6);
-//        assertThrows("n is out of bounds", Exception.class, () -> test.nthFromEnd(100));
-//    }
+    @Test public void testNthFromEnd() throws Exception {
+        LinkedList test = new LinkedList();
+        test.addToFront(2);
+
+        assertEquals("linked list of size 1", 2, test.nthFromEnd(0));
+
+        test.addToFront(3);
+        test.addToFront(4);
+        test.addToFront(5);
+        test.addToFront(6);
+
+        assertEquals("linked list of size 5", 3, test.nthFromEnd(1));
+        assertEquals("should return value of node n from the end", 4, test.nthFromEnd(2));
+
+        assertThrows("throws out of bounds error when n is larger than length of list", Exception.class, () -> test.nthFromEnd(6));
+        assertThrows("throws error when n is equal to length of list", Exception.class, () -> test.nthFromEnd(5));
+        assertThrows("throws error when n is negative value", Exception.class, () -> test.nthFromEnd(-3));
+
+    }
 //
 //    @Test
 //    public void testIncludesHappy(){

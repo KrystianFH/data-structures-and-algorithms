@@ -130,6 +130,7 @@ public class LinkedList {
     // write a method for the ll class which takes a number, k as a parameter
     // return nodes value that is k from the end of the ll
 
+//    tests are in main method
     public int nthFromEnd (int n) throws Exception{
 
         Node p1 = head;
@@ -144,6 +145,10 @@ public class LinkedList {
                 throw new Exception("Exception");
             }
             p2 = p2.next;
+        }
+
+        if(n < 0){
+            throw new Exception("Exception");
         }
 
         while (p2.next != null){
