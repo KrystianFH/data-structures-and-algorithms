@@ -21,3 +21,7 @@
 - insertAfter Method
   - Create new node with a value
   - Add new node after a given node in the list
+
+## Solution
+
+![Linked List Insertions Whiteboard](src/main/resources/whiteboard.png)

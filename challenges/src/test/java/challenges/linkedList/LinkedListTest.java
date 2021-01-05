@@ -153,53 +153,36 @@ public class LinkedListTest {
         assertThrows("throws out of bounds error when n is larger than length of list", Exception.class, () -> test.nthFromEnd(6));
         assertThrows("throws error when n is equal to length of list", Exception.class, () -> test.nthFromEnd(5));
         assertThrows("throws error when n is negative value", Exception.class, () -> test.nthFromEnd(-3));
-
     }
-//
-//    @Test
-//    public void testIncludesHappy(){
-//        LinkedList test = new LinkedList();
-//
-//        test.addToFront(1);
-//        test.addToFront(2);
-//        test.addToFront(3);
-//        test.addToFront(4);
-//
-//        boolean actual = test.includes(3);
-//
-//        assertTrue("This should be true", actual);
-//    }
-//
-//    @Test
-//    public void testIncludesSad(){
-//        LinkedList test2 = new LinkedList();
-//
-//        test2.addToFront(1);
-//        test2.addToFront(2);
-//        test2.addToFront(3);
-//        test2.addToFront(4);
-//
-//        boolean actual = test2.includes(17);
-//
-//        assertFalse("This should be false", actual);
-//
-//    }
 
-//    @Test
-//    public void testReverse(){
-//        LinkedList test3 = new LinkedList();
-//
-//        test3.addToFront(1);
-//        test3.addToFront(2);
-//        test3.addToFront(3);
-//        test3.addToFront(4);
-//
-//
-//        LinkedList.Node actual = reverseLinkedList(test3.head);
-//        int expected = 1;
-//        assertEquals("We expect the head to have a value of 1", expected, actual.value);
-//        assertNull("We expect the tail to have a null pointer", actual.next.next.next.next);
-//    }
+    @Test public void zipTwoLists() throws Exception{
+        LinkedList test1 = new LinkedList();
+        LinkedList test2 = new LinkedList();
+
+        assertThrows("throw an exception if both lists are empty", Exception.class, () -> LinkedList.zipLists(test1, test2));
+
+        test1.addToFront(1);
+        test1.addToFront(3);
+        test1.addToFront(5);
+        test1.addToFront(7);
+
+        assertEquals("should return list1 if list2 is empty", test1, LinkedList.zipLists(test1, test2));
+        assertEquals("return list two if list one is empty", test1, LinkedList.zipLists(test2, test1));
 
 
+        test2.addToFront(2);
+        test2.addToFront(4);
+        test2.addToFront(6);
+
+        LinkedList mergedList = new LinkedList();
+        mergedList.addToFront(1);
+        mergedList.addToFront(2);
+        mergedList.addToFront(3);
+        mergedList.addToFront(4);
+        mergedList.addToFront(5);
+        mergedList.addToFront(6);
+        mergedList.addToFront(7);
+
+        assertEquals("zipped list should match mergedList", mergedList.toString(), LinkedList.zipLists(test1, test2).toString());
+    }
 }
