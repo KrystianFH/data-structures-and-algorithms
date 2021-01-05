@@ -8,7 +8,7 @@
 1. [__Class Five:__ *Linked Lists*](src/main/java/challenges/linkedList/LinkedList.java)
 1. [__Class Six:__ *Linked List Insertions*](src/main/java/challenges/linkedList/LinkedList.java)
 1. [__Class Seven:__ *N-th Value from End of a Linked List*](src/main/java/challenges/linkedList/LinkedList.java)
-1. [__Class Eight:__ **]()
+1. [__Class Eight:__ *Zip Two Linked Lists*](src/main/java/challenges/linkedList/LinkedList.java)
 1. [__Class Nine:__ **]()
 1. [__Class Ten:__ **]()
 1. [__Class Eleven:__ **]()
@@ -63,4 +63,10 @@
 ### **Class 07 - N-th from End of a Linked List**
 
 - [Follow me to the notes for class 7!](KthFromEnd.md)
+
+### **Class 08 - Zip Two Linked Lists**
+
+- [Follow me to the notes for class 8!](ZipLists.md)
+
+
 

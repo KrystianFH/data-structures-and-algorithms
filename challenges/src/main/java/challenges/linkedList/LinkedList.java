@@ -126,11 +126,6 @@ public class LinkedList {
         }
     }
 
-    // kth from end
-    // write a method for the ll class which takes a number, k as a parameter
-    // return nodes value that is k from the end of the ll
-
-//    tests are in main method
     public int nthFromEnd (int n) throws Exception{
 
         Node p1 = head;
@@ -159,31 +154,36 @@ public class LinkedList {
         return p1.value;
     }
 
-    public static LinkedList ziplists(LinkedList one , LinkedList two){
-        LinkedList mergedList = new LinkedList();
-        if (one == null){
-            return two;
-        } else if (two == null){
-            return one;
-        }
-        Node current1 = one.head;
-        Node current2 = two.head;
-        Node tempVar = current1;
-        Node tempVar2 = current2;
+    public static LinkedList zipLists(LinkedList listOne , LinkedList listTwo) throws Exception{
 
-        while (current1 != null) {
-            current1 = current2;
-            current2 = current1.next;
-            current1.next = current2.next;
+        if (listOne.head == null && listTwo.head == null){
+            throw new Exception("both lists are empty and cannot be zipped");
         }
-        return mergedList;
-//        LinkedList mergedList = new LinkedList();
+
+        if (listOne.head == null){
+            return listTwo;
+        }
+
+        Node p1 = listOne.head.next;
+        Node p2 = listOne.head;
+        listTwo.current = listTwo.head;
+
+        while (p1 != null) {
+            if(listTwo.current == null){
+                return listOne;
+            }
+
+            listTwo.head = listTwo.current.next;
+            p2.next = listTwo.current;
+            listTwo.current.next = p1;
+
+            listTwo.current = listTwo.head;
+            p2 = p1;
+            p1 = p1.next;
+        }
+        p2.next = listTwo.current;
+        return listOne;
     }
-
-
-
-
-
 }
 
 
