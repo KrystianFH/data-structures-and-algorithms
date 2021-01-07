@@ -12,7 +12,7 @@
 1. [__Class Ten:__ *Stack and Queue Implementation*](src/main/java/challenges/stacksandqueues)
 1. [__Class Eleven:__ *Queue with Two Stacks*](src/main/java/challenges/stacksandqueues/PseudoQueue.java)
 1. [__Class Twelve:__ *First-In-First-Out Animal Shelter*](src/main/java/challenges/utilities/AnimalShelter.java)
-1. [__Class Thirteen:__ **]()
+1. [__Class Thirteen:__ *Multi-Bracket Validation*](src/main/java/challenges/utilities/MultiBracketValidation.java)
 1. [__Class Fourteen:__ **]()
 1. [__Class Fifteen:__ **]()
 1. [__Class Sixteen:__ **]()
@@ -78,6 +78,11 @@
 ### **Class 12 - First-In-First-Out Animal Shelter**
 
 - [Follow me to the notes for class 12!](AnimalShelter.md)
+
+### **Class 13 - Multi-Bracket Validation**
+
+- [Follow me to the notes for class 13!](MultiBracketValidation.md)
+
 
 
 

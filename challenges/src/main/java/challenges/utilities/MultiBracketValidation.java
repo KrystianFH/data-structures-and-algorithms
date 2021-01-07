@@ -1,25 +1,26 @@
 package challenges.utilities;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class MultiBracketValidation {
 
     public static boolean multiBracketValidation(String input){
-        HashMap<Character, Character> map = new HashMap<Character, Character>();
-        map.put('(',')');
-        map.put('[',']');
-        map.put('{','}');
+        HashMap<Character, Character> brackets = new HashMap<Character, Character>();
+        brackets.put('(',')');
+        brackets.put('[',']');
+        brackets.put('{','}');
 
-        Stack<Character> stack = new Stack<>();
+        Stack<Character> stack = new Stack<Character>();
 
-        for(int i = 0; i < input.length(); i++){
-            char curr = input.charAt(i);
+        for(int i=0; i < input.length(); i++){
+            char current = input.charAt(i);
 
-            if(map.keySet().contains(curr)){
-                stack.push(curr);
-            }else if (map.values().contains(curr)){
-                if(!stack.empty() && map.get(stack.peek()) == curr){
+            if(brackets.keySet().contains(current)){
+                stack.push(current);
+            } else if(brackets.values().contains(current)) {
+                if(!stack.empty() && brackets.get(stack.peek()) == current){
                     stack.pop();
                 } else {
                     return false;
@@ -28,6 +29,4 @@ public class MultiBracketValidation {
         }
         return stack.empty();
     }
-
-
 }
