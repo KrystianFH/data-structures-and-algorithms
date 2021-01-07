@@ -23,4 +23,4 @@
 
 ### Solution
 
-![Animal Shelter Whiteboard](src/main/resources/WhiteboardChallenge12.jpg)
+![Animal Shelter Whiteboard](src/main/resources/WhiteboardChallenge12.png)

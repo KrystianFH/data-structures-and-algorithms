@@ -3,17 +3,11 @@ package challenges.utilitiesTest;
 
 import challenges.utilities.MultiBracketValidation;
 import org.junit.Test;
-import static org.junit.Assert.*;
-
-import java.util.Stack;
-
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public class MultiBracketValidationTest {
 
-    @Test
-    public void multiBracketValidationTest() {
+    @Test public void multiBracketValidationTest() {
 
         String oneT = "{}"; //True
         String twoT = "{}(){}"; //True
@@ -31,7 +25,7 @@ public class MultiBracketValidationTest {
         assertEquals("This string is true", true, MultiBracketValidation.multiBracketValidation(fourT));
         assertEquals("This string is true", true, MultiBracketValidation.multiBracketValidation(fiveT));
         assertEquals("This string is false", false, MultiBracketValidation.multiBracketValidation(oneF));
-        assertEquals("This string is false", false, MultiBracketValidation.multiBracketValidation(oneF));
-        assertEquals("This string is false", false, MultiBracketValidation.multiBracketValidation(oneF));
+        assertEquals("This string is false", false, MultiBracketValidation.multiBracketValidation(twoF));
+        assertEquals("This string is false", false, MultiBracketValidation.multiBracketValidation(threeF));
     }
 }
