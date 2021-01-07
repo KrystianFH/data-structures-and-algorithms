@@ -11,7 +11,7 @@
 1. [__Class Eight:__ *Zip Two Linked Lists*](src/main/java/challenges/linkedList/LinkedList.java)
 1. [__Class Ten:__ *Stack and Queue Implementation*](src/main/java/challenges/stacksandqueues)
 1. [__Class Eleven:__ *Queue with Two Stacks*](src/main/java/challenges/stacksandqueues/PseudoQueue.java)
-1. [__Class Twelve:__ **]()
+1. [__Class Twelve:__ *First-In-First-Out Animal Shelter*](src/main/java/challenges/utilities/AnimalShelter.java)
 1. [__Class Thirteen:__ **]()
 1. [__Class Fourteen:__ **]()
 1. [__Class Fifteen:__ **]()
@@ -74,6 +74,10 @@
 ### **Class 11 - Queue with Two Stacks**
 
 - [Follow me to the notes for class 11!](QueueWithTwoStacks.md)
+
+### **Class 12 - First-In-First-Out Animal Shelter**
+
+- [Follow me to the notes for class 12!](AnimalShelter.md)
 
 
 

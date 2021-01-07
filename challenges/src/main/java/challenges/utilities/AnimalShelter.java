@@ -1,106 +1,58 @@
 package challenges.utilities;
 
-import java.util.EmptyStackException;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Stack;
-
 public class AnimalShelter  {
 
-    public boolean someLibraryMethod() {
-        return true;
+    public Node front;
+    public Node back;
+
+    public void enqueue(Animal animal){
+        if(front == null){
+            front = new Node(animal);
+        } else if (front.next == null){
+            back = new Node(animal);
+            front.next = back;
+        } else {
+            back.next = new Node(animal);
+            back = back.next;
+        }
     }
 
-    // code review 9/30
-//    LinkedList<Animal> animals = new LinkedList<>();
-//    LinkedList<Dog> dogs = new LinkedList<>();
-//    LinkedList<Cat> cats = new LinkedList<>();
-//    HashSet<Animal> adoptedAnimals = new HashSet<>();
-//
-//    public void enQueue(Cat cat){
-//        animals.add(cat);
-//        cats.add(cat);
-//    }
-//
-//    public void enQueue(Dog dog){
-//        animals.add(dog);
-//        dogs.add(dog);
-//    }
-//
-//    public Animal deQueue(){
-//        return animals.removeFirst();
-//    }
-//
-//    public Animal deQueue(Class<?> cl) throws ClassNotFoundException {
-//        if(cl == Cat.class){
-//            Cat adoptee = cats.removeFirst();
-//            adoptedAnimals.add(adoptee);
-//            return adoptee;
-//        } else if (cl == Dog.class){
-//            Dog adoptee = dogs.removeFirst();
-//            adoptedAnimals.add(adoptee);
-//            return adoptee;
-//        } else {
-//            throw new ClassNotFoundException("We only have Cats and Dogs");
-////            return null;
-//        }
-//    }
+    public Animal deQueue(String pref){
+        if (!pref.equals("dog") && !pref.equals("cat")) return null;
+        if (front == null) return null;
+        if (front.value.type.equals(pref)){
+            Node temp = front;
+            front = front.next;
+            return temp.value;
+        }
+        return recursiveSearch(front.next, front, pref);
+    }
 
+    private Animal recursiveSearch(Node node, Node previousNode, String pref){
+        if (node == null) return null;
+        if (node.value.type.equals(pref)){
+            previousNode.next = node.next;
+            return node.value;
+        }
+        return recursiveSearch(node.next, node, pref);
+    }
 
+    @Override
+    public String toString(){
+        return toString(front);
+    }
 
+    private String toString(Node node){
+        if(node == null) return "NULL";
+        return String.format("{%s} -> %s", node.value.toString(), toString(node.next));
+    }
 
+    private static class Node {
+        Animal value;
+        Node next = null;
 
-    public class Node <T> {
-        T value;
-        Node<T> next;
-
-        Node (T value){
+        public Node(Animal value){
             this.value = value;
         }
-
     }
-
-    public Node<Animal> top;
-    public Node<Animal> tail;
-
-    public void enQ (Animal animal){
-
-        Node<Animal> newNode = new Node<Animal>(animal);
-
-        if(top == null) {
-            top = newNode;
-            tail = newNode;
-        } else {
-            tail.next = newNode;
-            tail = newNode;
-        }
-
-
-    }
-
-    public Animal pop(){
-        if(top == null){
-            throw new EmptyStackException();
-        }
-        Animal tempVar = top.value;
-        top = top.next;
-
-        if (top == null) {
-            tail = null;
-        }
-            return tempVar;
-        }
-
-
-    public String toString(){
-        return toString(this.top);
-    }
-
-    public String toString(Node current){
-        if(current == null){
-            return "null";
-        }
-        return String.format("{%s} -> %s", current.getClass().getSimpleName(), toString(current.next));
-    }
-
 }
