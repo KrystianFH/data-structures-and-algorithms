@@ -17,4 +17,4 @@
   Space: O(n)
 
 #### Solution
-- ![Array Reverse Whiteboard](resources/dotnet-CC1.png)
+- ![Array Reverse Whiteboard](assets/array-reverse.png)
