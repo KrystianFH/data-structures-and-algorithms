@@ -4,7 +4,7 @@
 
 1. [__Class One:__ *Array Reverse*]()
 1. [__Class Two:__ *Array Shift*]()
-1. [__Class Three:__ **]()
+1. [__Class Three:__ *Binary Search*]()
 1. [__Class Five:__ **]()
 1. [__Class Six:__ **]()
 1. [__Class Seven:__ **]()
@@ -39,7 +39,7 @@
 
 ### **Class 03 - Binary Search of Array**
 
-- [Follow me to the notes for class 3!]()
+- [Follow me to the notes for class 3!](binarySearch.md)
 
 ### **Class 05 - Linked Lists**
 
