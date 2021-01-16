@@ -5,7 +5,7 @@
 1. [__Class One:__ *Array Reverse*]()
 1. [__Class Two:__ *Array Shift*]()
 1. [__Class Three:__ *Binary Search*]()
-1. [__Class Five:__ **]()
+1. [__Class Five:__ *Linked List Implementation*]()
 1. [__Class Six:__ **]()
 1. [__Class Seven:__ **]()
 1. [__Class Eight:__ **]()
@@ -43,7 +43,7 @@
 
 ### **Class 05 - Linked Lists**
 
-- [Follow me to the notes for class 5!]()
+- [Follow me to the notes for class 5!](linkedList.md)
 
 ### **Class 06 - Linked List Insertions**
 
