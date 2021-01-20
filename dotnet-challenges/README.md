@@ -7,7 +7,7 @@
 1. [__Class Three:__ *Binary Search*]()
 1. [__Class Five:__ *Linked List Implementation*]()
 1. [__Class Six:__ **]()
-1. [__Class Seven:__ **]()
+1. [__Class Seven:__ *Kth from End*]()
 1. [__Class Eight:__ **]()
 1. [__Class Ten:__ **]()
 1. [__Class Eleven:__ **]()
@@ -49,9 +49,9 @@
 
 - [Follow me to the notes for class 6!]()
 
-### **Class 07 - N-th from End of a Linked List**
+### **Class 07 - K-th from End of a Linked List**
 
-- [Follow me to the notes for class 7!]()
+- [Follow me to the notes for class 7!](kthFromEnd.md)
 
 ### **Class 08 - Zip Two Linked Lists**
 
