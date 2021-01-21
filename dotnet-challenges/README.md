@@ -8,7 +8,7 @@
 1. [__Class Five:__ *Linked List Implementation*]()
 1. [__Class Six:__ **]()
 1. [__Class Seven:__ *Kth from End*]()
-1. [__Class Eight:__ **]()
+1. [__Class Eight:__ *Zip Two Lists*]()
 1. [__Class Ten:__ **]()
 1. [__Class Eleven:__ **]()
 1. [__Class Twelve:__ **]()
@@ -55,7 +55,7 @@
 
 ### **Class 08 - Zip Two Linked Lists**
 
-- [Follow me to the notes for class 8!]()
+- [Follow me to the notes for class 8!](zipLists.md)
 
 ### **Class 10 - Stack and Queue Implementation**
 
