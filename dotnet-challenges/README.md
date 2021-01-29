@@ -10,8 +10,8 @@
 1. [__Class Seven:__ *Kth from End*]()
 1. [__Class Eight:__ *Zip Two Lists*]()
 1. [__Class Ten:__ **]()
-1. [__Class Eleven:__ **]()
-1. [__Class Twelve:__ **]()
+1. [__Class Eleven:__ *Queue With Two Stacks*]()
+1. [__Class Twelve:__ *FIFO Animal Shelter*]()
 1. [__Class Thirteen:__ **]()
 1. [__Class Fifteen:__ **]()
 1. [__Class Sixteen:__ **]()
@@ -67,7 +67,7 @@
 
 ### **Class 12 - First-In-First-Out Animal Shelter**
 
-- [Follow me to the notes for class 12!]()
+- [Follow me to the notes for class 12!](fifoAnimalShelter.md)
 
 ### **Class 13 - Multi-Bracket Validation**
 
