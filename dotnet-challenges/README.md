@@ -63,7 +63,7 @@
 
 ### **Class 11 - Queue with Two Stacks**
 
-- [Follow me to the notes for class 11!]()
+- [Follow me to the notes for class 11!](pseudoQueue.md)
 
 ### **Class 12 - First-In-First-Out Animal Shelter**
 
